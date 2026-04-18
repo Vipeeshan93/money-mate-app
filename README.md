@@ -1,50 +1,169 @@
-# Welcome to your Expo app 👋
+# 💰 MoneyMate — AI-Powered Financial Management App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+An intelligent mobile application designed to help users manage personal finances by tracking income, expenses, and budgets while receiving personalized financial insights through an AI-powered chatbot.
 
-## Get started
+This system enhances financial decision-making by combining real-time data tracking, visualization, and AI-driven recommendations in a user-friendly mobile environment.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📊 Features
 
-2. Start the app
+### 💼 Financial Management
 
-   ```bash
-   npx expo start
-   ```
+* Add, edit, and delete income and expense transactions
+* Categorize financial activities for better tracking
+* Maintain a digital financial diary
+* View past transactions with filtering options
 
-In the output, you'll find options to open the app in a
+### 💰 Budget Management
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+* Create and manage budget categories
+* Monitor spending against budget limits
+* Detect overspending with visual indicators
+* Edit and delete budget allocations
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 📈 Analytics & Reports
 
-## Get a fresh project
+* Visualize income and expenses using **pie charts**
+* Analyze financial data (daily, weekly, monthly, yearly)
+* Understand spending patterns through graphical insights
 
-When you're ready, run:
+### 🤖 AI-Powered Chatbot
 
-```bash
-npm run reset-project
+* Ask financial questions using natural language
+* Get personalized financial advice and recommendations
+* Analyze spending behavior and suggest budget adjustments
+* Real-time financial insights using AI
+
+### 🔐 User Management
+
+* Secure user authentication (Sign up / Login)
+* Password reset with security verification
+* Personalized user data storage
+
+---
+
+## 🏗️ Architecture
+
+The application follows a **layered architecture**:
+
+* **Presentation Layer**
+
+  * React Native mobile interface
+  * User interaction and UI rendering
+
+* **Application Logic Layer**
+
+  * Business logic processing
+  * Transaction and budget management
+  * Chatbot request handling
+
+* **Data Layer**
+
+  * Firebase Firestore (NoSQL database)
+  * Real-time data storage and synchronization
+
+* **External Services Layer**
+
+  * OpenAI API (AI chatbot intelligence)
+  * Chart Kit (data visualization)
+
+### 🔑 Key Design Principles
+
+* Separation of concerns
+* Scalable cloud-based architecture
+* Real-time data synchronization
+* Modular and maintainable design
+
+---
+
+## 🛠️ Technologies
+
+* **React Native** — Cross-platform mobile development
+* **Firestore — Backend & database
+* **OpenAI API** — AI chatbot integration
+* **JavaScript** — Core programming language
+* **React Native Chart Kit** — Data visualization
+* **Android Studio** — Development & testing environment
+
+---
+
+## 📂 Key Components
+
+* `screens/` → Application screens (Dashboard, Budget, Transactions)
+* `components/` → Reusable UI components
+* `context/` → State management
+* `firebaseConfig.js` → Firebase integration
+* `chatbot.js` → AI chatbot logic
+* `transactions/` → Transaction management
+* `budget/` → Budget handling
+
+---
+
+## ⚙️ System Functionalities
+
+* User authentication (Signup, Login, Reset Password)
+* Transaction management (CRUD operations)
+* Budget management (Create, Update, Delete)
+* Financial reporting & visualization
+* AI chatbot interaction for financial insights
+
+---
+
+## ⚙️ Getting Started
+
+### 📌 Prerequisites
+
+* **Android Studio** (with Android Emulator)
+* **Firebase Project** (Firestore)
+* **Google account** (for Firebase setup)
+* **OpenAI API Key** (for chatbot functionality)
+
+---
+
+## 🚀 Setup
+
+```bash id="setup001"
+git clone https://github.com/your-username/money-mate-app.git
+cd money-mate-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+1. Open the project in **Android Studio**
+2. Configure your **Firebase project**
+3. Add your **OpenAI API Key** in the project configuration
+4. Run the app using an emulator or physical Android device
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🔐 Environment Configuration
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Store your API keys securely (do NOT hardcode them in your code):
 
-## Join the community
+```id="env001"
+OPENAI_API_KEY=your_api_key_here
+```
 
-Join our community of developers creating universal apps.
+⚠️ Never commit sensitive keys to GitHub.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 📊 System Highlights
+
+* Real-time financial tracking using Firebase
+* AI-driven personalized recommendations
+* Interactive and user-friendly mobile UI
+* Data visualization for better decision-making
+
+---
+
+## 🔮 Future Improvements
+
+* Cross-Platform Support (iOS)
+* Integrated Payment Functionality
+* Receipt Scanning (OCR Integration)
+* Advanced Analytics & Dashboards
+
+---
+
+
+
