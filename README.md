@@ -135,18 +135,6 @@ cd money-mate-app
 
 ---
 
-## 🔐 Environment Configuration
-
-Store your API keys securely (do NOT hardcode them in your code):
-
-```id="env001"
-OPENAI_API_KEY=your_api_key_here
-```
-
-⚠️ Never commit sensitive keys to GitHub.
-
----
-
 ## 📊 System Highlights
 
 * Real-time financial tracking using Firebase
